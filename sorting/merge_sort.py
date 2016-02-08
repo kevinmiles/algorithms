@@ -1,3 +1,5 @@
+# merge_sort.py
+
 def mergesort(input):
     if len(input) <= 1:
         return input
@@ -19,3 +21,4 @@ def merge(left, right):
     result += left[i:]
     result += right[j:]
     return result
+

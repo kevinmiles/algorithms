@@ -19,10 +19,10 @@ def dijkstra(graph, source):
     while len(queue) > 0:
         node = heapq.heappop(queue)[1]
         for child in graph[node]:
-            if child in visited:
-                continue
-            relax(graph, costs, node, child)
-            heapq.heappush(queue, (costs[child], child))
-            visited.add(node)
+            if child not in visited:
+                relax(graph, costs, node, child)
+                heapq.heappush(queue, (costs[child], child))
+                visited.add(node)
 
     return costs
+

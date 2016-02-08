@@ -21,3 +21,4 @@ def dfs(graph, source, visited_callback):
         for child in graph[node]:
             if child not in visited:
                 agenda.append(child)
+
