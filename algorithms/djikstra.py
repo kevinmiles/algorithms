@@ -2,9 +2,11 @@
 
 import heapq
 
+
 def relax(graph, costs, node, child):
     if costs[child] > costs[node] + graph[node][child]:
         costs[child] = costs[node] + graph[node][child]
+
 
 def dijkstra(graph, source):
 
@@ -25,4 +27,3 @@ def dijkstra(graph, source):
                 visited.add(node)
 
     return costs
-

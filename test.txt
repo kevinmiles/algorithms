@@ -1,5 +1,0 @@
-ABCDEFG
-NOTABD
-THISHASABcjk it doesnt
-abc
-the number of lines with ABC is 2

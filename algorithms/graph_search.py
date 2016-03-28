@@ -1,6 +1,7 @@
-# bfs.py
+# graph_search.py
 
 from collections import deque
+
 
 def bfs(graph, source, visited_callback):
     agenda = deque([source])
@@ -12,6 +13,7 @@ def bfs(graph, source, visited_callback):
             if child not in visited:
                 agenda.append(child)
 
+
 def dfs(graph, source, visited_callback):
     agenda = deque([source])
     visited = set()
@@ -21,4 +23,3 @@ def dfs(graph, source, visited_callback):
         for child in graph[node]:
             if child not in visited:
                 agenda.append(child)
-

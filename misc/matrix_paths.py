@@ -1,5 +1,6 @@
 # matrix_paths.py
 
+
 def matrix_paths_recursive(m, n, i, j):
     # base case
     if i == m - 1 and j == n - 1:
@@ -12,7 +13,6 @@ def matrix_paths_recursive(m, n, i, j):
         count += matrix_paths_recursive(m, n, i, j+1)
     return count
 
-print matrix_paths_recursive(10, 10, 0, 0)
 
 def matrix_paths(m, n):
     # initialize m by n matrix
@@ -28,6 +28,3 @@ def matrix_paths(m, n):
         for j in xrange(1, n):
             counts[i][j] = counts[i-1][j] + counts[i][j-1]
     return counts[m-1][n-1]
-
-print matrix_paths(100, 100)
-

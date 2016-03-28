@@ -4,6 +4,7 @@
 # For example, given the array [2,3,-2,4],
 # the largest product is 6 for subarray [2,3].
 
+
 def max_subarray(values):
     if len(values) < 1:
         raise Exception("input must have at least one value")
@@ -22,5 +23,4 @@ def max_subarray(values):
 
     return global_max
 
-print max_subarray([2,3,-2,4])
-
+print max_subarray([2, 3, -2, 4])

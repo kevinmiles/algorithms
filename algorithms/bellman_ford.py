@@ -1,8 +1,10 @@
 # bellman_ford.py
 
+
 def relax(graph, costs, node, child):
     if costs[child] > costs[node] + graph[node][child]:
         costs[child] = costs[node] + graph[node][child]
+
 
 def bellman_ford(graph, source):
 
@@ -22,8 +24,3 @@ def bellman_ford(graph, source):
                 raise ValueError("graph has negative weight cycle")
 
     return costs
-
-graph = {
-        "a":
-        }
-

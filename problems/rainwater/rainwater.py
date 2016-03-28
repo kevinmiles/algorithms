@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 # rainwater.py
 
 # Given n non-negative integers representing an elevation map
